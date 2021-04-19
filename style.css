@@ -1,3 +1,79 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@700&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+/* General Styles */
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
 body {
-   background: crimson;
+   background-color: #e9ecef;
+   font-family: 'Source Sans Pro', sans-serif;
+   display: flex;
+   flex-direction: row;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Card Element */
+.card {
+   background-color: #111d4a;
+   display: flex;
+   flex-direction: column;
+   max-width: 90%;
+   width: 320px;
+}
+
+.card-title {
+   color: #05cbe9;
+   font-family: 'Blinker', sans-serif;
+   font-size: 1.75rem;
+   font-weight: 700;
+}
+
+.card-body {
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 1rem;
+   font-weight: 400;
+   margin: 1.5em 0;
+   letter-spacing: 1px;
+   line-height: 1.4;
+}
+
+.card-image {
+   max-height: 200px;
+   min-width: 100%;
+   object-fit: cover;
+}
+
+.card-content {
+   max-width: 650px;
+   padding: 2em;
+   width: 100%;
+}
+
+.card-footer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.card-read-time > p {
+   color: rgba(255, 255, 255, 0.51);
+   display: flex;
+   flex-flow: row wrap;
+   width: 56px;
+}
+
+@media screen and (min-width: 768px) {
+   .card {
+      flex-direction: row;
+      width: 800px;
+   }
+
+   .card-image {
+      min-width: 200px;
+      max-height: 100%;
+   }
 }
